@@ -12,9 +12,9 @@ NOTE : Download all the models present in the directory and place it in the same
 **STEP3:** Place the frames of the video in the "./Images" folder
 
 **STEP2:** Run the command given below
-'''
+```python
 !HeadTracking.py
-'''
+```
 
 **STEP4:** Head Tracking results will automatically generated with the name of HeadTrackingResult.mp4 file
 
