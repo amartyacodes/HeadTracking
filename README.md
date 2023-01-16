@@ -16,8 +16,26 @@ NOTE : Download all the models present in the directory and place it in the same
 !HeadTracking.py
 ```
 
-**STEP4:** Head Tracking results will automatically generated with the name of HeadTrackingResult.mp4 file
+**STEP4:** Head Tracking results will automatically generated with the name of HeadTrackingResult.mp4 file.
 
+## Working Principle
 
+**1.** Initially Detect the Heads for the first frame using YOLOv7 Head Detector model trained on Crowdhuman dataset
+
+**2.** Distribute the bounding boxes into different classes
+
+**3.** For the subsequent frames, again detect the head bounding boxes using the YOLO Head Detector model
+
+**4.** Obtain the distance between corresponding frames and based on nearest distance class assignment, assign the classes of the bounding boxes found in the current frame. For better understanding look at the below figure
+![BoxClassAssignment](https://user-images.githubusercontent.com/44440114/212593283-27fb96e3-1469-426d-8772-df610d40f866.jpg)
+
+**5.** Continue the above process till the end 
+
+### NOTE: The only constraint is the number of people in a frame at the start of the video must be less than or equal to the number of people in the rest of the frames. Work is being done for further upgrades
+
+## This work has been done under the guidance of Professor Hajime Nagahara at Institute of Datability Science, Osaka University 
+Lab Website: https://www.is.ids.osaka-u.ac.jp/
+
+**My Website:** amartyacodes.github.io
 
 
