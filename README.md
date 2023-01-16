@@ -36,6 +36,6 @@ NOTE : Download all the models present in the directory and place it in the same
 ## This work has been done under the guidance of Professor Hajime Nagahara at Institute of Datability Science, Osaka University 
 Lab Website: https://www.is.ids.osaka-u.ac.jp/
 
-**My Website:** amartyacodes.github.io
+**My Website:** https://amartyacodes.github.io
 
 
