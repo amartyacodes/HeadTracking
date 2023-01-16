@@ -1,9 +1,23 @@
-# yolov7-head-onnxrun-cpp-py
-使用ONNXRuntime部署YOLOV7人头检测，包含C++和Python两个版本的程序.
-起初想使用opencv部署的，可是opencv读取onnx文件后在forward函数出错了，
-无赖只能使用onnxruntime部署。
-这套程序对onnxruntime的版本要求较高，需要使用最新的onnxruntime做推理。
-我的机器上的onnxruntime版本是1.11.1，人头检测可以应用到人流密度估计场景里。
+# Head Tracking Model 
+## This is a head tracking model which utilizes YOLOv7 to detect the head and Omni Scale Model for Person Reidentification features for tracking the human heads in a video.
+![HeadTrackingResult2 (5)](https://user-images.githubusercontent.com/44440114/212591528-1ee7e928-64ac-48d9-8afd-e1d1e67d2801.gif)
 
-onnx文件在百度云盘，链接：https://pan.baidu.com/s/1N22OMJA1UVMpao2QT9Y4lw 
-提取码：t02a
+## How to Run the Model?
+
+**STEP1:** Download the model weights from the given folder link :
+https://drive.google.com/drive/folders/1tC7iObkkKkmCMiYWT0rzb6VDVkSjg1rB?usp=sharing
+
+NOTE : Download all the models present in the directory and place it in the same directory as current one.
+
+**STEP3: ** Place the frames of the video in the "./Images" folder
+
+**STEP2: ** Run the command given below
+'''python
+!HeadTracking.py
+'''
+
+**STEP4: ** Head Tracking results will automatically generated with the name of HeadTrackingResult.mp4 file
+
+
+
+
