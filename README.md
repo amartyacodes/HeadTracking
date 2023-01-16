@@ -4,19 +4,19 @@
 
 ## How to Run the Model?
 
-**STEP1: ** Download the model weights from the given folder link :
+**STEP1:** Download the model weights from the given folder link :
 https://drive.google.com/drive/folders/1tC7iObkkKkmCMiYWT0rzb6VDVkSjg1rB?usp=sharing
 
 NOTE : Download all the models present in the directory and place it in the same directory as current one.
 
-**STEP3: ** Place the frames of the video in the "./Images" folder
+**STEP3:** Place the frames of the video in the "./Images" folder
 
-**STEP2: ** Run the command given below
+**STEP2:** Run the command given below
 '''python
 !HeadTracking.py
 '''
 
-**STEP4: ** Head Tracking results will automatically generated with the name of HeadTrackingResult.mp4 file
+**STEP4:** Head Tracking results will automatically generated with the name of HeadTrackingResult.mp4 file
 
 
 
